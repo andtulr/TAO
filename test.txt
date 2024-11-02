@@ -1,0 +1,29 @@
+
+Git
+
+git commit -m "name commit" (название commit (совершить)) - создает коммит с сообщением
+
+git status 
+
+git add .
+git add name.file
+
+
+git branch
+git branch name
+git branch -D name
+git checkout namebranch (название ветки) - переход на другую ветку
+git checkout -b namebranch (название ветки) - создание и переход новая ветка
+
+
+Github
+
+git config --global user.name - проверка имени
+git config --global user.name "tao" - ввод имени
+git config --global user.email - проверка имени почты
+git config --global user.email "ааа@ddd.ru" - ввод имени
+
+
+git push -u origin main - main (название commit)
+
+
