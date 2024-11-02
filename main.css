@@ -1,0 +1,82 @@
+/* Первоначальная настройка внешних (margin) и внутренних (padding) отступов */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("images/bg.png");
+  background-color: #1B1D3C;
+}
+
+h1, h2, h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  text-align: left;
+  color: #FFFFFF;
+}
+h1 {
+  font-size: 120px;
+  line-height: 117px;
+  color: #A276FF;
+}
+h3 {
+  font-size: 42px;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: Roboto;
+  font-size: 29px;
+  font-weight: 400;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+button {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+
+  width: 352px;
+  height: 70px;
+
+  color: #FFFFFF;
+  border: 3px solid #FFFFFF;
+  background-color: transparent; /*задний фон прозрачный */
+  border-radius: 17px;
+  text-transform: uppercase;
+}
+button:hover {
+  border-color: #F2C94C;
+  cursor: pointer;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: space-around;
+  width: 217px; /*217px*/
+  height: 73px;
+  gap: 0px;
+  border-radius: 0px 0px 10px 10px;
+  background: #A276FF;
+  position: fixed;
+  top: 0;
+  right: 100px;
+}
+.social-media-icons-icon {
+  width: 65px;
+  height: 65px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+.icon-vk { background-image: url("images/vk-white.png"); }
+.icon-tg { background-image: url("images/tg-white.png"); }
+
+.social-media-icons-icon:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}

@@ -1,0 +1,65 @@
+/* Боковая навигация */
+.sidenav {
+    height: 100%; /* Растягивает высоту боковой менюшки на всю высоту окна. */
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(11,11,13,0.5);
+    overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
+    padding-top: 20px;
+}
+
+.sidenav a {
+    opacity: 100%;
+    display: block;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+
+    font-family: "Oswald", sans-serif;
+    font-size: 17px;
+ 
+    color: #FFFFFF;
+}
+
+/* Изменение цвета ссылок при наведении. */
+.sidenav a:hover {
+    color: #75041c;
+}
+
+.sidenav-logo {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.sidenav-logo span {
+  color: #A276FF;
+}
+.sidenav-logo span:hover {
+  /* color: #A276FF; */
+  color: #F2C94C;
+}
+
+.sidenav-footer a {
+  opacity: .7;
+}
+.copyrights {
+  font-family: "Oswald", sans-serif;
+  font-size: 17px;
+  color: #FFFFFF;
+  opacity: .25;
+}
+
+/* Стили основного содержимого страницы */
+main {
+    margin-left: 160px; /* Этот отступ одинаков с шириной боковой менюшки. Это смещение вправо от менюшки. */
+    padding: 0px 10px;
+}
+
+/* При уменьшении ширины экрана уменьшаем размер отступа и шрифта */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
